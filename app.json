@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "FFmpeg Face Detect",
+    "slug": "ffmpeg-face-detect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d0d1a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.phungnlg.ffmpegfacedetect",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera for real-time face detection."
+      }
+    },
+    "android": {
+      "package": "com.phungnlg.ffmpegfacedetect",
+      "adaptiveIcon": {
+        "backgroundColor": "#0d0d1a",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": ["android.permission.CAMERA"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow FFmpeg Face Detect to access your camera for real-time face detection."
+        }
+      ],
+      "@infinitered/react-native-mlkit-face-detection"
+    ]
+  }
+}
